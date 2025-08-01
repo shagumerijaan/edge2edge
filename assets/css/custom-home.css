@@ -1,0 +1,486 @@
+/* Custom Home Page Styles for Edge 2 Edge Cleaning */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.slide-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.slide-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6600;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.slide-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: white;
+    line-height: 1.6;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-call {
+    background: linear-gradient(135deg, #ff6600, #ff8533);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+}
+
+.btn-quote {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-call:hover {
+    background: linear-gradient(135deg, #e55a00, #ff6600);
+}
+
+.btn-quote:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff);
+}
+
+.mute-toggle {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.mute-toggle:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.05);
+}
+
+/* Why Choose Us Section */
+.why-choose-us-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.video-container {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.styled-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.features-list {
+    padding-left: 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.check-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.feature-item p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.cta-content {
+    margin-top: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-content h3 {
+    color: #ff6600;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.cta-content a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cta-content a:hover {
+    text-decoration: underline;
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #ff6600, #ff8533);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.service-link {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.service-link:hover {
+    color: #e55a00;
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.contact-info {
+    margin-bottom: 50px;
+}
+
+.contact-item {
+    display: inline-block;
+    margin: 0 30px 30px;
+    text-align: center;
+}
+
+.contact-item i {
+    font-size: 3rem;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+.contact-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-item p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.contact-item a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.cta-buttons {
+    margin-top: 40px;
+}
+
+.btn-lg {
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    margin: 0 10px 10px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ff6600, #ff8533);
+    border: none;
+    color: white;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #6c757d, #5a6268);
+    border: none;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+        min-height: 500px;
+    }
+    
+    .slide-content {
+        max-width: 95%;
+        padding: 30px 20px;
+    }
+    
+    .slide-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .slide-content p {
+        font-size: 1rem;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    .mute-toggle {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    .why-choose-us-section,
+    .services-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+    
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .check-icon {
+        margin: 0 auto 15px;
+    }
+    
+    .contact-item {
+        display: block;
+        margin: 0 0 40px;
+    }
+    
+    .btn-lg {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .slide-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+    }
+    
+    .cta-content {
+        padding: 20px;
+    }
+    
+    .cta-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    .btn,
+    .service-card,
+    .feature-item,
+    .mute-toggle {
+        transition: none;
+    }
+    
+    .btn:hover,
+    .service-card:hover,
+    .feature-item:hover {
+        transform: none;
+    }
+}
+
+/* Focus styles for better accessibility */
+.btn:focus,
+.mute-toggle:focus,
+.service-link:focus,
+.contact-item a:focus {
+    outline: 2px solid #ff6600;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .hero-section,
+    .background-video,
+    .mute-toggle {
+        display: none;
+    }
+    
+    .slide-content {
+        background: none;
+        color: black;
+        padding: 0;
+    }
+    
+    .btn {
+        border: 2px solid #333;
+        background: none;
+        color: #333;
+    }
+}
